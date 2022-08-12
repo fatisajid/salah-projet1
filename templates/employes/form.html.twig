@@ -1,0 +1,106 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<h1>
+{% if editMode %}
+   modification 
+    
+{% else %}
+ Ajout d'un employé
+    
+{% endif %}
+
+</h1>
+
+
+{{form_start(formEmployes) }} 
+
+{{ form_row(formEmployes.nom, {
+    label: "Nom",
+    attr: {
+        placeholder:"Saisissez le nom"
+    }
+
+}) }}
+
+
+{{ form_row(formEmployes.prenom, {
+    label: "Prenom",
+    attr: {
+        placeholder:"Saisissez le prenom"
+    }
+}) }}
+
+
+{{ form_row(formEmployes.telephone, {
+    label: "Telephone",
+    attr: {
+        placeholder:"Saisissez le telephone"
+    }
+}) }}
+
+{{ form_row(formEmployes.email, {
+    label: "Email",
+    attr: {
+        placeholder:"Saisissez l'email"
+    }
+}) }}
+
+{{ form_row(formEmployes.adresse, {
+    label: "Adresse",
+    attr: {
+        placeholder:"Saisissez l'adresse"
+    }
+}) }}
+
+
+{{ form_row(formEmployes.poste, {
+    label: "Poste",
+    attr: {
+        placeholder:"Saisissez le poste"
+    }
+}) }}
+
+{{ form_row(formEmployes.salaire, {
+    label: "Salaire",
+    attr: {
+        placeholder:"Saisissez le salaire"
+    }
+}) }}
+
+{{ form_row(formEmployes.datedenaissance, {
+    label: "Date de naissance",
+    attr: {
+        placeholder:"jj/mm"
+    }
+}) }}
+
+
+
+<button type="submit" class="btn btn-primary mt-2">
+{% if editMode %}
+
+   enregistrer les modification
+{% else %}
+    
+    ajout d'un employé
+{% endif %}
+cree un compte
+</button>
+
+
+
+
+{{ form_end(formEmployes) }}
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
