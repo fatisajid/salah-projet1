@@ -22,7 +22,7 @@
         placeholder:"Saisissez le nom"
     }
 
-}) }}
+}) }}<br>
 
 
 {{ form_row(formEmployes.prenom, {
@@ -30,7 +30,7 @@
     attr: {
         placeholder:"Saisissez le prenom"
     }
-}) }}
+}) }}<br>
 
 
 {{ form_row(formEmployes.telephone, {
@@ -38,21 +38,21 @@
     attr: {
         placeholder:"Saisissez le telephone"
     }
-}) }}
+}) }}<br>
 
 {{ form_row(formEmployes.email, {
     label: "Email",
     attr: {
         placeholder:"Saisissez l'email"
     }
-}) }}
+}) }}<br>
 
 {{ form_row(formEmployes.adresse, {
     label: "Adresse",
     attr: {
         placeholder:"Saisissez l'adresse"
     }
-}) }}
+}) }}<br>
 
 
 {{ form_row(formEmployes.poste, {
@@ -60,21 +60,21 @@
     attr: {
         placeholder:"Saisissez le poste"
     }
-}) }}
+}) }}<br>
 
 {{ form_row(formEmployes.salaire, {
     label: "Salaire",
     attr: {
         placeholder:"Saisissez le salaire"
     }
-}) }}
+}) }}<br>
 
 {{ form_row(formEmployes.datedenaissance, {
     label: "Date de naissance",
     attr: {
         placeholder:"jj/mm"
     }
-}) }}
+}) }}<br>
 
 
 
@@ -87,16 +87,13 @@
     ajout d'un employé
 {% endif %}
      
-</button>
+</button> <br><br>
 
 
+<a href=" {{ path('app_employes') }}" class="btn btn-primary">Retour a la page d'acceuil</a>
 
 
 {{ form_end(formEmployes) }}
-
-
-
-
 
 
 {% endblock %}
