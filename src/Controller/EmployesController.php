@@ -41,7 +41,7 @@ public function form(Request $superglobals,EntityManagerInterface $manager, Empl
    {
     $manager->persist($employes);
     $manager->flush();
-    return $this->redirectToRoute('show',['id'=>$employes->getId() ]);
+    return $this->redirectToRoute('app_employes',['id'=>$employes->getId() ]);
 
    }
 
